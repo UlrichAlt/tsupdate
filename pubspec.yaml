@@ -1,0 +1,12 @@
+name: tsupdate
+version: 0.0.1
+description: Command Line Client for TSUpdate Service
+
+dependencies:
+  args: any
+  crypto: any
+  yaml: any
+  path: any
+
+executables:
+  tsupdate: main.dart
