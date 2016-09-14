@@ -39,14 +39,22 @@ ArgResults setupParser(List<String> args) {
 main(List<String> args) async {
   ArgResults argParseResult = setupParser(args);
   if (argParseResult != null) {
-    YamlMap credData = loadYaml((new File(argParseResult['cred'])).readAsStringSync());
+    YamlMap credData =
+        loadYaml((new File(argParseResult['cred'])).readAsStringSync());
     new Directory(argParseResult['path']).createSync(recursive: true);
 
     UpdateData updateData = new UpdateData(credData);
 
-    await updateData.initData(new UpdateItem(argParseResult['access'],
-        argParseResult['version'], argParseResult['arch'], null, null, null, null));
+    await updateData.initDataFromWeb(new UpdateItem(
+        argParseResult['access'],
+        argParseResult['version'],
+        argParseResult['arch'],
+        null,
+        null,
+        null,
+        null));
 
+    await updateData.initDataFromDisk(argParseResult['path']);
     updateData.downloadPatches(argParseResult['path']);
   }
 }

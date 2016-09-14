@@ -22,13 +22,26 @@ class UpdateItem {
       accessLevel == criteria.accessLevel &&
       version == criteria.version;
 
-  Future<Digest> computeMd5(File fileName) async {
-    return md5.bind(fileName.openRead()).first;
-  }
+  bool operator ==(UpdateItem criteria) =>
+      accessLevel == criteria.accessLevel &&
+      fileName == criteria.fileName &&
+      size == criteria.size &&
+      version == criteria.version &&
+      platform == criteria.platform &&
+      product == criteria.product &&
+      ((md5Hash != null) && (criteria.md5Hash != null)
+          ? md5Hash == criteria.md5Hash
+          : true);
+
+  Future<Digest> computeMd5(File fileName) async => md5.bind(fileName.openRead()).first;
+
+    String get masterFileEntry =>
+    "$accessLevel $version/$platform/$product/$fileName $size bytes MD5:${hex.encode(md5Hash.bytes)}";
 
   Future downloadPatch(
       HttpClient client, String baseUrl, String storePath) async {
-    String completePath =path.join(storePath, version, platform, product, fileName);
+    String completePath =
+        path.join(storePath, version, platform, product, fileName);
 
     if (!(new File(completePath)).existsSync()) {
       HttpClientRequest req = await client
@@ -38,9 +51,10 @@ class UpdateItem {
         print("Downloading $completePath");
         res.pipe(f.openWrite()).whenComplete(() {
           computeMd5(f).then((Digest dig) {
-            if (md5Hash != null) if (md5Hash != dig)
-              print("Error in MD5 checksum for $completePath");
-            else
+            if (md5Hash != null) {
+              if (md5Hash != dig)
+                print("Error in MD5 checksum for $completePath");
+            } else
               md5Hash = dig;
           });
         });
@@ -49,11 +63,11 @@ class UpdateItem {
   }
 }
 
-class UpdateItemGenerator extends Converter<String, UpdateItem> {
-  const UpdateItemGenerator();
+class UpdateItemFromWeb extends Converter<String, UpdateItem> {
+  const UpdateItemFromWeb();
 
   static final RegExp parseLine = new RegExp(
-      r"((Com|Dev|Test)[\s-]+)?([0-9\.]+)\/(x86|x64)\/([\w'\s]+)\/([^\/]+)\s(\d+)\sbytes(\sMD5:([0-9A-F]+))?$");
+      r"((Com|Dev|Test)[\s-]+)?([0-9\.]+)\/(x86|x64)\/([\w'\s]+)\/([^\/]+)\s(\d+)\sbytes(\sMD5:([0-9A-Fa-f]+))?$");
 
   UpdateItem convert(String str) {
     Match match = parseLine.firstMatch(str);
@@ -80,7 +94,7 @@ class UpdateItemSink extends ChunkedConversionSink<String> {
   UpdateItemSink(this._outSink);
 
   void add(String data) {
-    UpdateItem item = const UpdateItemGenerator().convert(data);
+    UpdateItem item = const UpdateItemFromWeb().convert(data);
     if (item != null) _outSink.add(item);
   }
 
