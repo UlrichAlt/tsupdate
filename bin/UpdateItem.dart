@@ -33,33 +33,42 @@ class UpdateItem {
           ? md5Hash == criteria.md5Hash
           : true);
 
-  Future<Digest> computeMd5(File fileName) async => md5.bind(fileName.openRead()).first;
+  String getCompletePath(String storePath) =>
+      path.join(storePath, version, platform, product, fileName);
 
-    String get masterFileEntry =>
-    "$accessLevel $version/$platform/$product/$fileName $size bytes MD5:${hex.encode(md5Hash.bytes)}";
+  Future<bool> isValid(String storePath) async {
+    File f = new File(getCompletePath(storePath));
+    if (!await f.exists()) return false;
+    FileStat stat = await f.stat();
+    if (stat.size != size) return false;
+    return await computeMd5(f) == md5Hash;
+  }
+
+  Future<Digest> computeMd5(File fileName) =>
+      md5.bind(fileName.openRead()).first;
+
+  String get masterFileEntry =>
+      "$accessLevel $version/$platform/$product/$fileName $size bytes MD5:${hex.encode(md5Hash.bytes)}";
 
   Future downloadPatch(
       HttpClient client, String baseUrl, String storePath) async {
-    String completePath =
-        path.join(storePath, version, platform, product, fileName);
+    String completePath = getCompletePath(storePath);
 
-    if (!(new File(completePath)).existsSync()) {
-      HttpClientRequest req = await client
-          .getUrl(Uri.parse("$baseUrl/$version/$platform/$product/$fileName"));
-      HttpClientResponse res = await req.close();
-      new File(completePath).create(recursive: true).then((File f) {
-        print("Downloading $completePath");
-        res.pipe(f.openWrite()).whenComplete(() {
-          computeMd5(f).then((Digest dig) {
-            if (md5Hash != null) {
-              if (md5Hash != dig)
-                print("Error in MD5 checksum for $completePath");
-            } else
-              md5Hash = dig;
-          });
+    HttpClientRequest req = await client
+        .getUrl(Uri.parse("$baseUrl/$version/$platform/$product/$fileName"));
+    HttpClientResponse res = await req.close();
+    new File(completePath).create(recursive: true).then((File f) {
+      print("Downloading $completePath");
+      res.pipe(f.openWrite()).whenComplete(() {
+        computeMd5(f).then((Digest dig) {
+          if (md5Hash != null) {
+            if (md5Hash != dig)
+              print("Error in MD5 checksum for $completePath");
+          } else
+            md5Hash = dig;
         });
       });
-    }
+    });
   }
 }
 

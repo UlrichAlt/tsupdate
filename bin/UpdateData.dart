@@ -37,10 +37,12 @@ class UpdateData {
   }
 
   void downloadPatches(String storePath) {
-    itemsFromWeb.removeWhere((UpdateItem ui) => itemsFromDisk.contains(ui));
-    itemsFromWeb.forEach((UpdateItem ui) =>
-        ui.downloadPatch(client, credData['website'], storePath));
-    itemsFromDisk.addAll(itemsFromWeb);
+    itemsFromWeb.forEach((UpdateItem ui) async {
+      if (!itemsFromDisk.contains(ui) || !await ui.isValid(storePath)) {
+        ui.downloadPatch(client, credData['website'], storePath);
+        itemsFromDisk.add(ui);
+      }
+    });
     serializeNewMaster(storePath);
   }
 
