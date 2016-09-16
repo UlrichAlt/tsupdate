@@ -47,28 +47,30 @@ class UpdateItem {
   Future<Digest> computeMd5(File fileName) =>
       md5.bind(fileName.openRead()).first;
 
-  String get masterFileEntry =>
-      "$accessLevel $version/$platform/$product/$fileName $size bytes MD5:${hex.encode(md5Hash.bytes)}";
+  void writeMasterFileEntry(IOSink sink) =>
+      sink.write("$accessLevel $version/$platform/$product/$fileName $size bytes MD5:${hex.encode(md5Hash.bytes)}\r\n");
 
-  Future downloadPatch(
-      HttpClient client, String baseUrl, String storePath) async {
+  Future downloadPatchIfInvalid(
+      HttpClient client, String baseUrl, String storePath, IOSink sink) async {
     String completePath = getCompletePath(storePath);
-
-    HttpClientRequest req = await client
-        .getUrl(Uri.parse("$baseUrl/$version/$platform/$product/$fileName"));
-    HttpClientResponse res = await req.close();
-    new File(completePath).create(recursive: true).then((File f) {
-      print("Downloading $completePath");
-      res.pipe(f.openWrite()).whenComplete(() {
-        computeMd5(f).then((Digest dig) {
-          if (md5Hash != null) {
-            if (md5Hash != dig)
-              print("Error in MD5 checksum for $completePath");
-          } else
-            md5Hash = dig;
+    if (!await isValid(storePath)) {
+      HttpClientRequest req = await client
+          .getUrl(Uri.parse("$baseUrl/$version/$platform/$product/$fileName"));
+      HttpClientResponse res = await req.close();
+      new File(completePath).create(recursive: true).then((File f) {
+        print("Downloading $completePath");
+        writeMasterFileEntry(sink);
+        res.pipe(f.openWrite()).whenComplete(() {
+          computeMd5(f).then((Digest dig) {
+            if (md5Hash != null) {
+              if (md5Hash != dig)
+                print("Error in MD5 checksum for $completePath");
+            } else
+              md5Hash = dig;
+          });
         });
       });
-    });
+    }
   }
 }
 

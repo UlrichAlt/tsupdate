@@ -4,7 +4,7 @@ path: bin\main.dart
 
 cli:
   # Additional args for the application.
-  args: --path c:\temp\tsupdate --version 7.10
+  args: --path \\nas\tsupdate --version 7.10
   # The working directory to use for the launch.
   cwd:
   # Enable or disable checked mode.
