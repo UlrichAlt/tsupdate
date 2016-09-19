@@ -53,13 +53,13 @@ class UpdateItem {
   Future downloadPatchIfInvalid(
       HttpClient client, String baseUrl, String storePath, IOSink sink) async {
     String completePath = getCompletePath(storePath);
+    writeMasterFileEntry(sink);
     if (!await isValid(storePath)) {
       HttpClientRequest req = await client
           .getUrl(Uri.parse("$baseUrl/$version/$platform/$product/$fileName"));
       HttpClientResponse res = await req.close();
       new File(completePath).create(recursive: true).then((File f) {
         print("Downloading $completePath");
-        writeMasterFileEntry(sink);
         res.pipe(f.openWrite()).whenComplete(() {
           computeMd5(f).then((Digest dig) {
             if (md5Hash != null) {

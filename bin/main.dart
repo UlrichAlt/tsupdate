@@ -55,6 +55,6 @@ main(List<String> args) async {
         null));
 
     await updateData.initDataFromDisk(argParseResult['path']);
-    await updateData.downloadPatches(argParseResult['path']);
+    updateData.downloadPatches(argParseResult['path']);
   }
 }
