@@ -1,0 +1,661 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"li",
+				"limerkNr"
+			],
+			[
+				"rel",
+				"replText"
+			],
+			[
+				"con",
+				"► containsKey(Object key) → bool"
+			],
+			[
+				"System",
+				"Systembindung"
+			],
+			[
+				"open",
+				"► openWrite({FileMode mode: FileMode.WRITE, Encoding encoding: UTF8}) → IOSink"
+			],
+			[
+				"cre",
+				"► createSync({bool recursive: false}) → void"
+			],
+			[
+				"UT",
+				"© Utf8Decoder({bool allowMalformed: false})"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/backup/ppv6/Vb/PpTop/Clients/leipert/TopPpLeipert/TopPpLeipert.csproj",
+			"settings":
+			{
+				"buffer_size": 6583,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/backup/ppv7/lehner/DeckelMaho150.ini",
+			"settings":
+			{
+				"buffer_size": 841,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Philips/TopPpPhilips#v=mill#i=01.mod",
+			"settings":
+			{
+				"buffer_size": 33283,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/backup/ppv6/Vb/PpTop/Clients/psb/TopPpPsb/INI-Files/Matec5X.ini",
+			"settings":
+			{
+				"buffer_size": 15325,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bin/UpdateItem.dart",
+			"settings":
+			{
+				"buffer_size": 3492,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git ",
+				"Git: Add All"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"inde",
+				"Indent XML"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"add fo",
+				"Project: Add Folder"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"toggl",
+				"Toggle Block Comment"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"dart for",
+				"Dart: Format"
+			],
+			[
+				"add fol",
+				"Project: Add Folder"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"dart",
+				"Dart: Format"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/backup/work/dartproject/tsupdate",
+		"/C/backup/work/dartproject/tsupdate/bin"
+	],
+	"file_history":
+	[
+		"/C/backup/ppv6/Vb/PpTop/Clients/preinfalk/TopPpPreinfalk/TopPpPreinfalk.csproj",
+		"//nas/austausch/lina.txt",
+		"/C/backup/ppv6/Vb/PpTop/Clients/lehner/TopPpLehner/TopPpLehner.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/Neosid/Neosid/TopPpNeosid.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/leipert/TopPpLeipert/TopPpLeipert.csproj",
+		"/C/backup/ppv7/lehner/Schiess.ini",
+		"/C/backup/ppv7/preinfalk/Setup/Setup.wixproj",
+		"/S/Vb/PpTop/Clients/leipert/TopPpLeipert/packages.config",
+		"/C/backup/ppv7/preinfalk/Setup/preinfalk.wxs",
+		"/S/Vb/PpTop/Clients/leipert/TopPpLeipert/TopPpLeipert.csproj",
+		"/S/Vb/PpTop/Clients/leipert/TopPpLeipert/TopPpLeipert.csproj.user",
+		"/C/backup/ppv6/Vb/PpTop/Clients/adenta/TopPpAdenta/TopPpAdenta.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/akg/TopPpAkg/TopPpAkg.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/arndt_endler/TopPpFranke/TopPpFranke.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/bauer/TopPpBauer/TopPpBauer.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/becker/TopPpBecker/TopPpBecker.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/befa/TopPpBefa/TopPpBefa.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/bergmann/TopPpBergmann/TopPpBergmann.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/bittner/TopPpBittner/TopPpBittner.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/delbruegge/TopPpDelbruegge/TopPpDelbruegge.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/emano/TopPpEmano/TopPpEmano.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/exco/DxfConvert/DxfConvert.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/exco/TopPpExco/TopPpExco.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/gilbos/TopMTool/TopMTool.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/gilbos/TopPpSiemensgil1/TopPpSiemensgil1/TopPpSiemensgil1.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/haarmann/TopPpHaarmann/TopPpHaarmann.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/hakon/TopPpHakon/TopPpHakon.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/harbecke/TopPpHarbecke/TopPpHarbecke.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/hase/TopPpHase/TopPpHase.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/hettich/TopPpHettich/TopPpHettich.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/hinterkopf/TopPpHinterkopf/TopPpHinterkopf.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/huber/TopPpHuber/TopPpHuber.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/innotec/TopPpInnotec/TopPpInnotec.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/isobar/TopPpIsobar/TopPpIsobar.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/Karodur/TopPpKarodur/TopPpKarodur.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/klesen/TopPpKlesen/TopPpKlesen.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/kvplast/TopPpKvPlast/TopPpKvPlast.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/lamm/TopPpLamm/TopPpLamm.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/lieb/TopPpLieb/TopPpLieb.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/list/TopPpList/TopPpList.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/lufratech/TopPpLudwig/TopPpLudwig.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/martin/TopPpMartin/TopPpMartin.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/mea/TopPpMea/TopPpMea.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/merkler/TopPpMerkler/TopPpMerkler.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/mussbach/TopPpMussbach/TopPpMussbach.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/norheimer/TopPpNorheimer/TopPpNorheimer.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/pfw/TopPpPfw/TopPpPfw.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/pockau/TopPpPockau/TopPpPockau.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/ppsetup/Uploader/Uploader.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/ppsetup/WestCommon/WestCommon.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/ppsetup/Xml2Ini/Xml2Ini.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/prosup/TopPpProsup2/TopPpProsup2.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/psb/TopPpPsb/TopPpPsb.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/ruga/TopPpRuga/TopPpRuga.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/schweidler/TopPpSBM/TopPpSBM.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/seis/TopPpSeis/TopPpSeis.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/simaform/TopPpSimaform/TopPpSimaform.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/vollack/TopPpVollack/TopPpVollack.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/watzke/TopPpWatzke/TopPpWatzke.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/wuerz/TopPpWuerz/TopPpWuerz.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/wzmetall/TopPpWzMetall/TopPpWzMetall.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/ymp/TopPpYmp/TopPpYmp.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/zenker/TopPpZenker/TopPpZenker.csproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/akg/Setup/SetupAkg.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/arndt_endler/Setup/SetupFranke.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/bauer/Setup/SetupBauer.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/becker/Setup/SetupBecker.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/befa/Setup/SetupBefa.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/bergmann/Setup/SetupBergmann.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/bittner/Setup/SetupBittner.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/delbruegge/Setup/SetupDelbruegge.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/emano/Setup/SetupEmano.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/haarmann/Setup/SetupHaarmann.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/harbecke/Setup/SetupHarbecke.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/hase/Setup/SetupHase.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/hettich/Setup/SetupHettich.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/huber/Setup/SetupHuber.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/innotec/Setup/SetupInnotec.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/isobar/SetupMatthies/SetupMatthies.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/isobar/SetupPrecupa/SetupPrecupa.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/isobar/SetupSwf/SetupSwf.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/klesen/Setup/SetupKlesen.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/kvplast/Setup/SetupKvPlast.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/lamm/Setup/SetupLamm.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/lehner/Setup/SetupLehner.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/leipert/Setup/SetupLeipert.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/list/Setup/SetupList.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/lufratech/SetupLudwig/SetupLudwig.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/martin/Setup/SetupMartin.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/mea/Setup/SetupMea.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/merkler/Setup/SetupMerkler.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/mussbach/Setup/SetupMussbach.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/Neosid/Setup/SetupNeosid.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/norheimer/Setup/SetupNorheimer.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/pfw/Setup/SetupPfw.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/pockau/Setup/SetupPockau.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/preinfalk/Setup/SetupPreinfalk.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/prosup/Setup/SetupProsup.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/psb/Setup/SetupPsb.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/ruga/Setup/SetupRuga.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/simaform/Setup/SetupSimaform.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/vollack/Setup/SetupVollack.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/watzke/Setup/SetupWatzke.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/wuerz/Setup/SetupWürz.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/wzmetall/Setup/SetupWzMetall.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/ymp/Setup/YmpSetup.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/zenker/Setup/SetupZenker.wixproj",
+		"/C/backup/ppv6/Vb/PpTop/Clients/gilbos/TopPpSiemensgil1/Setup/SetupGilbos.wixproj",
+		"/C/backup/ppv7/bhs/BhsAddIn.csproj",
+		"/C/backup/ppv7/Gilbos/GilbosAddin.csproj",
+		"/C/backup/ppv7/Gruen/GruenAddin.csproj",
+		"/C/backup/ppv7/Hase/HaseAddin.csproj",
+		"/C/backup/ppv7/Innotec/InnotecAddin.csproj",
+		"/C/backup/ppv7/Lichter/TopPpLichterAddIn.csproj",
+		"/C/backup/ppv7/MBH/TopPpMbhAddIn.csproj",
+		"/C/backup/ppv7/MBZ/WeipertAddIn.csproj",
+		"/C/backup/ppv7/merkler/MerklerAddin/MerklerAddin.csproj",
+		"/C/backup/ppv7/MHG/MhgAddin.csproj",
+		"/C/backup/ppv7/Missler/TopPpFanucM1AddIn.csproj",
+		"/C/backup/ppv7/mussbach/MussbachAddIn.csproj",
+		"/C/backup/ppv7/PPV7/UploaderV7/UploaderV7.csproj",
+		"/C/backup/ppv7/Prosup/ProsupAddIn.csproj",
+		"/C/backup/ppv7/Raiser/RaiserAddIn.csproj",
+		"/C/backup/ppv7/roma/RomaExporter/RomaExporter.csproj",
+		"/C/backup/ppv7/Schottel/SchottelAddIn.csproj",
+		"/C/backup/ppv7/Vollack/VollackAddin.csproj",
+		"/C/backup/ppv7/YMP/YmpAddin.csproj",
+		"/C/backup/ppv7/Zirro/ZirroAddIn.csproj"
+	],
+	"find":
+	{
+		"height": 64.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"*.csproj",
+			"*.wixproj",
+			"Setup.wxs",
+			"*.wixproj",
+			"*.wxs",
+			".wxs",
+			"*.wixproj",
+			"*.wxs"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"q339",
+			"cycle_depth",
+			"cycle_drill",
+			"cycle",
+			"TRACE",
+			"^TRACE</DefineConstants>",
+			"DEBUG;TRACE",
+			"    </DefineConstants>",
+			"    <DefineConstants>",
+			"    </UpgradeBackupLocation>",
+			"    <UpgradeBackupLocation>",
+			"    <OldToolsVersion>4.0</OldToolsVersion>",
+			"</FileUpgradeFlags>",
+			"<FileUpgradeFlags>",
+			"<PropertyGroup Condition=\" '$(Configuration)|$(Platform)' == 'Debug|x64' \">",
+			"Include=\"..\\..\\..\\ppsetup\\SetupLib\\SetupLib.wixproj\"",
+			"UpgradeCode='[0-9A-F\\-a-f]*'",
+			"UpgradeCode",
+			"      <ComponentGroupRef Id='Iso'/>",
+			"      <ComponentRef Id='MainExecutable' />",
+			"\n      <ComponentRef Id='OrphanedCat'/>",
+			"      <ComponentRef Id='ProgramMenuDir' />",
+			"<ComponentGroupRef Id='PPGroup'/>",
+			"..\\ppsetup\\SetupLib",
+			"....PPV7",
+			"<SccLocalPath>SAK</SccLocalPath>",
+			"(\\r\\n)+",
+			"    <Icon Id=\"TopPpExec.exe\" SourceFile=\"$(var.SolutionDir)\\ppsetup\\Bin\\TopPpExec.exe\" />",
+			"?> Id=",
+			"<PropertyRef Id=(.|\\r\\n|\\s)+?<Feature",
+			"<SuppressValidation>True</SuppressValidation>",
+			"Include",
+			"Systembindung an Konzern, Gruppe oder Kunden",
+			"Lange Jahre das gleiche System/Kein Gedanke an Veränderung"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"<DefineConstants>TRACE</DefineConstants>",
+			"<DefineConstants>DEBUG;TRACE",
+			"",
+			"<PropertyGroup Condition=\" '$(Configuration)|$(Platform)' == 'Debug|x64' \"><RefAssyPath>7.10</RefAssyPath>",
+			"Include=\"..\\..\\ppsetup\\SetupLib\\SetupLib.wixproj\"",
+			"UpgradeCode=''",
+			"",
+			"..\\..\\ppsetup\\SetupLib",
+			"..\\ppsetup\\SetupLib",
+			"<SccLocalPath>SAK</SccLocalPath><IncludeSearchPaths>..\\..\\PPV7\\</IncludeSearchPaths>",
+			"\\r\\n",
+			"(\\r\\n)",
+			"",
+			"?> <Feature Id=",
+			"<?include SetupV6.wxi ?>",
+			"<SuppressValidation>True</SuppressValidation><IncludeSearchPaths>..\\..\\PPV7\\</IncludeSearchPaths>",
+			"Keine Änderung"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/backup/ppv6/Vb/PpTop/Clients/leipert/TopPpLeipert/TopPpLeipert.csproj",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 993.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/backup/ppv7/lehner/DeckelMaho150.ini",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 841,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								341,
+								341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Program Files/Missler Software/TopSolid 7.10/Cam/NC/PostProcessors/Bases/Philips/TopPpPhilips#v=mill#i=01.mod",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 33283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13986,
+								13986
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 8477.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/backup/ppv6/Vb/PpTop/Clients/psb/TopPpPsb/INI-Files/Matec5X.ini",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5309,
+								5309
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3589.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "bin/UpdateItem.dart",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3492,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								580,
+								580
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dart/Dart.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 78.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.dart.analyzer":
+	{
+		"height": 100.0
+	},
+	"output.dart.out":
+	{
+		"height": 94.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 494.0
+	},
+	"pinned_build_system": "",
+	"project": "tsupdate.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"up",
+				"bin\\UpdateItem.dart"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 280.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

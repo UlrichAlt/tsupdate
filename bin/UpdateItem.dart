@@ -59,7 +59,7 @@ class UpdateItem {
           .getUrl(Uri.parse("$baseUrl/$version/$platform/$product/$fileName"));
       HttpClientResponse res = await req.close();
       new File(completePath).create(recursive: true).then((File f) {
-        print("Downloading $completePath");
+        print("Downloading $version/$platform/$product/$fileName");
         res.pipe(f.openWrite()).whenComplete(() {
           computeMd5(f).then((Digest dig) {
             if (md5Hash != null) {
